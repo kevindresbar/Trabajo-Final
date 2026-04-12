@@ -1,0 +1,99 @@
+* {
+    /* Reseteo básico para quitar espacios por defecto del navegador */
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: 62.5%;
+    /* Facilita el uso de rem (1rem = 10px) */
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background: #33333331;
+}
+
+.MenuLogo { 
+    height: 50px; 
+}
+
+.MenuList {
+    display: flex;
+    list-style: none;
+    gap: 35px; 
+}
+
+.MenuList a {
+    text-decoration: none;
+    color: #333;
+    /* Fuente y Tamaño */
+    font-family: 'Segoe UI', Roboto, sans-serif; 
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    transition: 0.3s;
+}
+
+
+.MenuList a:hover {
+    color: #008DDF; 
+    transform: translateY(-2px); 
+}
+/* FOOTER */
+
+
+footer {
+    background: #333; 
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.fimg {
+    display: flex;
+    justify-content: right;
+    height: 50px;
+    filter: brightness(0) invert(1);   
+}
+
+.footerlegal{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.ItemsLegal {
+    text-decoration: none;
+    color: #bbb;
+    font-size: 1.2Rem;
+    transition: 0.3s;
+}
+
+.ItemsLegal:hover {
+    color: #008DDF; 
+}
+
+.MasAbajo {
+    font-size: 8px;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid;
+     color: #bbb;
+}
