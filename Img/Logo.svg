@@ -1,0 +1,20 @@
+<svg width="660" height="240" viewBox="0 0 220 80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .cls-1 { fill: #00468C; }
+      .cls-2 { font-size: 28px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; fill: #00468C; }
+      .cls-3 { font-weight: 700; }
+      .cls-4 { fill: #00CFFF; fill-opacity: 0.6; }
+    </style>
+  </defs>
+  <g transform="translate(10, 15) scale(0.6)">
+    <path d="M10 50 L50 10 L90 50 L82 50 L50 18 L18 50 Z" class="cls-1"/>
+    <path d="M50 40 C44 40, 39 45, 39 51 C39 57, 44 62, 50 62 C56 62, 61 57, 61 51 C61 45, 56 40, 50 40 Z M50 56 C47 56, 45 54, 45 51 C45 48, 47 46, 50 46 C53 46, 55 48, 55 51 C55 54, 53 56, 50 56 Z" class="cls-1"/>
+    <rect x="48" y="34" width="4" height="6" rx="1" class="cls-1"/>
+    <rect x="48" y="62" width="4" height="6" rx="1" class="cls-1"/>
+    <rect x="33" y="49" width="6" height="4" rx="1" class="cls-1"/>
+    <rect x="61" y="49" width="6" height="4" rx="1" class="cls-1"/>
+    <path d="M50 10 L58 18 L50 26 L42 18 Z" class="cls-4"/>
+  </g>
+  <text x="80" y="52" class="cls-2">Home<tspan class="cls-3">Ops</tspan></text>
+</svg>
