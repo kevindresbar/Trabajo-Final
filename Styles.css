@@ -52,8 +52,6 @@ header {
     color: #008DDF; 
     transform: translateY(-2px); 
 }
-/* FOOTER */
-
 
 footer {
     background: #333; 
@@ -82,7 +80,7 @@ footer {
 .ItemsLegal {
     text-decoration: none;
     color: #bbb;
-    font-size: 1.2Rem;
+    font-size: 1.7Rem;
     transition: 0.3s;
 }
 
@@ -91,7 +89,7 @@ footer {
 }
 
 .MasAbajo {
-    font-size: 8px;
+    font-size: 19px;
     margin-top: 3rem;
     padding-top: 2rem;
     border-top: 1px solid;
@@ -130,6 +128,5 @@ footer {
 
     .btnWhatsapp {
         width: 45px;
-       
     }
 }
