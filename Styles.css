@@ -97,3 +97,39 @@ footer {
     border-top: 1px solid;
      color: #bbb;
 }
+.btnWhatsapp{
+    position: fixed;
+    width: 55px;
+    right: 2rem;
+    bottom:15rem;
+    text-align: center;
+    transition-duration: 0.2;
+
+}
+.btnWhatsapp :hover{
+    transform: translateY(-7px); 
+}
+
+@media (max-width: 480px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 5%;
+    }
+
+    .MenuList {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px; 
+    }
+    .fimg {
+        justify-content: center; 
+        margin-bottom: 15px;
+    }
+
+    .btnWhatsapp {
+        width: 45px;
+       
+    }
+}
