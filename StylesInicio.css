@@ -10,7 +10,91 @@ html {
     /*1rem = 10px*/
     height: 100%;
 }
+/* ESTRUCTURA BASE */
+.Fondo {
+    position: relative;
+    width: 100%;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+    overflow: hidden;
+}
 
+/* IMAGEN Y CAPA (Unificadas) */
+.fondo, .superposicion-oscura {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+}
+
+.fondo { object-fit: cover; z-index: 1; }
+
+.superposicion-oscura {
+    background: linear-gradient(90deg, rgba(0,48,150,0.9), rgba(0,0,0,0.4));
+    z-index: 2;
+}
+
+/* CONTENIDO DINÁMICO */
+.ContenidoFondo {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    gap: 30px;
+}
+
+.Izquierda { color: #fff; max-width: 600px; }
+
+.Izquierda h1 {
+    font-size: clamp(4rem, 8vw, 7rem);
+    font-weight: 900;
+    line-height: 1;
+}
+
+/* BOTONES (Agrupados para ahorrar líneas) */
+.btnWhatsapp2, .btncel {
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.8rem;
+    transition: .3s;
+}
+
+.btnWhatsapp2 { background: #25D366; color: #fff; margin-top: 20px; }
+
+.btncel { background: #003096; color: #fff; display: block; margin-top: 15px; }
+
+/* PANEL DERECHO */
+.Derecha {
+    background: #FFD700;
+    padding: 40px;
+    border-radius: 30px;
+    text-align: center;
+    max-width: 380px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.Derecha h2 { font-size: 2.2rem; margin-bottom: 20px; color: #333; }
+
+/* EFECTOS */
+.btnWhatsapp2:hover, .btncel:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* RESPONSIVE COMPACTO */
+@media (max-width: 430px) {
+    .ContenidoFondo { flex-direction: column; text-align: center; }
+    .Izquierda h1 { font-size: 4rem; }
+    .Derecha { padding: 30px 20px; }
+} agregale esto al css
 .Reseñas {
     padding: 1rem;
     padding-bottom: 5rem;
