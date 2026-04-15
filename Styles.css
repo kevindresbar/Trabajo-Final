@@ -29,6 +29,12 @@ header {
 .MenuLogo { 
     height: 50px; 
 }
+.logo__menu , .logo{
+    width: 4rem;
+}
+#toggle__menu , .logo__menu{
+    display: none;
+}
 
 .MenuList {
     display: flex;
@@ -46,8 +52,6 @@ header {
     letter-spacing: 0.5px;
     transition: 0.3s;
 }
-
-
 .MenuList a:hover {
     color: #008DDF; 
     transform: translateY(-2px); 
@@ -107,7 +111,53 @@ footer {
 .btnWhatsapp :hover{
     transform: translateY(-7px); 
 }
+@media (max-width: 480px) {
+    header { 
+        flex-direction:row-reverse; 
+    }
+    .Menu {
+        position: absolute;
+        top: 8rem;
+        left:  0;
+        width: 0;
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+        background: rgba(255, 255, 255, 0.95);
+        z-index: 1000;
+         transition: width 1s ease , height 1s ease , opacity 1s ease, border-radius 1s ease ;
+    }
 
+  .MenuList {
+        flex-direction: column;
+         justify-content: center;
+         align-items: center;
+        position: absolute;
+        width: 100%;
+        height: 6.5rem;
+        left: 0; 
+    }
+    .logo__menu { 
+        display: block; 
+        cursor: pointer;
+     }
+      #toggle__menu:checked ~ .Menu {
+        height: 20rem;
+        width: 100%;
+        opacity: 1;
+        
+    }
+
+       .fimg {
+        justify-content: center; 
+        margin-bottom: 15px;
+    }
+.btnWhatsapp {
+        width: 45px;
+    }
+}
+
+/*
 @media (max-width: 480px) {
 
     header {
@@ -125,8 +175,15 @@ footer {
         justify-content: center; 
         margin-bottom: 15px;
     }
+     #toggle__menu:checked ~ .menu{
+        height: 20rem;
+        width: 100%;
+        opacity: 1;
+        border-radius: 0px 0px 0px 0px;
+
+    }
 
     .btnWhatsapp {
         width: 45px;
     }
-}
+} */
