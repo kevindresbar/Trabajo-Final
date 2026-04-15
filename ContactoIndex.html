@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Styles.css">
-    <link rel="stylesheet" href="StylesInicio.css">
+    <link rel="stylesheet" href="ContactoStyless.css">
 </head>
 
 <body>
@@ -22,44 +22,52 @@
 
         <nav class="Menu">
             <ul class="MenuList">
-                <li><a class="MenuList" href="">INICIO</a></li>
+                <li><a class="MenuList" href="IndexIniciol.html">INICIO</a></li>
                 <li><a class="MenuList" href="">SOBRE NOSOTROS</a></li>
                 <li><a class="MenuList" href="">SERVICIOS</a></li>
-                <li><a class="MenuList" href="ContactoIndex.html">CONTÁCTANOS</a></li>
+                <li><a class="MenuList" href="">CONTÁCTANOS</a></li>
             </ul>
         </nav>
 
 
     </header>
     <main>
+        <div class="Maestro">
+            <img src="https://i.pinimg.com/736x/e9/b0/fb/e9b0fb9cef148ed779e3d86467a952ce.jpg" alt="Mantenimiento">
 
-        <div class="Reseñas">
-            <h2 class="tituloreseña">Lo que dicen nuestros clientes</h2>
-
-            <div class="Rese">
-                <div class="re">
-                    <p class="Comentario">"Excelente servicio. El equipo de HomeOps fue puntual y solucionó el problema
-                        de mi oficina en tiempo récord. Muy profesionales."</p>
-                    <p class="Estrellas">&#127775 &#127775 &#127775 &#127775 &#127775 </p>
-                    <p class="cliente">-Carlos Rodríguez</p>
-                </div>
-
-                <div class="re">
-                    <p class="Comentario">"La atención por WhatsApp es inmediata. Me ayudaron con el mantenimiento de mi
-                        hogar y los resultados fueron impecables. Recomendados 100%."</p>
-                    <p class="Estrellas">&#127775 &#127775 &#127775 &#127775 &#127775 </p>
-                    <p class="cliente">-Mariana Gómez</p>
-                </div>
-
-                <div class="re">
-                    <p class="Comentario">"Súper confiables. Es difícil encontrar empresas tan comprometidas con la
-                        calidad hoy en día. Sin duda volveré a contratarlos."</p>
-                    <p class="Estrellas">&#127775 &#127775 &#127775 &#127775 &#127775 </p>
-                    <p class="cliente">-Juan Pérez</p>
-                </div>
-            </div>
         </div>
-        </section>
+
+
+        <form class="contact-form" action="https://formspree.io/f/xpqyvdgg" method="POST">
+
+            <fieldset>
+
+                <label for="name">Nombre</label>
+                <input type="text" placeholder="Tu nombre completo" id="name" name="name" required>
+
+                <label for="number">Numero de Telefono</label>
+                <input type="number" placeholder="Tu numero de Telefono" id="number" name="Number" required>
+
+                <label for="Mail">Correo Eletronico</label>
+                <input type="email" placeholder="**********@example.com" id="Mail" name="email" required>
+
+                <label for="Servicio">Tipo de Servicio</label>
+                <select name="Servicio" id="Servicio" required>
+                    <option value="">Plomeria</option>
+                    <option value="">Eletricista</option>
+                    <option value="">Reparaciones</option>
+                    <option value="">Instalaciones</option>
+                    <option value="">Carpinteria</option>
+                    <option value="">Jardineria</option>
+                </select>
+
+                <label for="message">Mensaje</label>
+                <textarea name="" placeholder="¿En qué puedo ayudarte?" id="message" name="message" required></textarea>
+
+                <!-- Se pone el requeride y el name en cada input para que se pueda enviar el formulario de lo contrario no dejara y saldra erro -->
+                <button type="submit" class="btn">Enviar Mensaje</button>
+            </fieldset>
+        </form>
 
 
 
@@ -95,6 +103,7 @@
             <p>HomeOps by Kevin Baez</p>
         </div>
     </footer>
+
 </body>
 
 </html>

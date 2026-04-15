@@ -1,0 +1,93 @@
+*{/* Reseteo básico para quitar espacios por defecto del navegador */
+    margin: 0px;
+padding: 0px;
+box-sizing: border-box;}
+html{
+    font-size: 62.5%; /* Facilita el uso de rem (1rem = 10px) */    
+}
+/* CONTENEDOR */
+main{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:4rem;
+  padding:4rem;
+}
+
+/* IMAGEN */
+.Maestro img{
+  width:320px;
+  border-radius:1.5rem;
+  box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* FORMULARIO */
+.contact-form{
+  background:#fff;
+  padding:2.5rem;
+  border-radius:1.5rem;
+  box-shadow:0 10px 30px rgba(0,0,0,0.1);
+  width:320px;
+}
+
+/* CAMPOS */
+fieldset{
+  border:none;
+  display:flex;
+  flex-direction:column;
+  gap:1.5rem;
+}
+
+/* LABEL */
+label{
+  font-size:1.4rem;
+  font-weight:bold;
+  color:#333;
+}
+
+/* INPUTS */
+input, textarea{
+  padding:1.3rem;
+  border:1px solid #e0e0e0;
+  border-radius:1rem;
+  font-size:1.4rem;
+  background:#f9f9f9;
+  transition:all .3s ease;
+}
+
+/* EFECTO BONITO */
+input:focus, textarea:focus{
+  outline:none;
+  border-color:#000;
+  background:#fff;
+  box-shadow:0 0 8px rgba(0,0,0,0.1);
+}
+
+/* BOTÓN */
+.btn{
+  margin-top:1rem;
+  padding:1.4rem;
+  background:linear-gradient(135deg,#000,#444);
+  color:#fff;
+  border:none;
+  border-radius:1rem;
+  font-size:1.6rem;
+  cursor:pointer;
+  transition:all .3s ease;
+}
+
+.btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  main{
+    flex-direction:column;
+  }
+
+  .Maestro img{
+    width:250px;
+  }
+}
