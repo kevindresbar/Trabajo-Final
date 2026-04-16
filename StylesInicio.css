@@ -122,11 +122,11 @@ body {
 }
 
 
-
-.quienessomos {
+.Quienessomos {
     font-family: 'Segoe UI', sans-serif;
     max-width: 1000px;
     margin: auto;
+    margin-bottom:12rem;
 }
 
 .TitleQuienesSomos {
@@ -162,16 +162,67 @@ body {
     border-radius:25px;
 margin-bottom: 5rem;}
 
+.Servicios {
+    padding: 60px 20px;
+    background: #002fff5d;
+    text-align: center;
 
+
+}
+
+.h2Servicios {
+    font-size: 4.5rem;
+    margin-bottom: 50px;
+}
+.h2Servicios span{ color: #008DDF; }
+
+.ListaServicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    /* hace que se divida en trescolumnas */
+    gap: 40px;
+    list-style: none;
+    width: 80%;
+    margin: auto;
+    padding: 0;
+}
+
+.ListaServicios li {
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.TitleServicios {
+    color: #333; 
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+ h4{
+    font-size: 3rem;
+    margin-bottom: 1.3rem;
+ }
+.PServicios {
+    color: #666;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin: 0 auto;
+}
+
+.ListaServicios li:hover {
+    transform: scale(1.05);
+}
 
 .Reseñas {
+    margin-top: 9rem;
+    margin-bottom: 7rem;
     padding: 1rem;
-    padding-bottom: 5rem;
     text-align: center;
 }
 
 .tituloreseña {
-    font-size: 3.5rem;
+    font-size: 4.8rem;
+    padding-bottom: 3rem;
     color: #333;
 }
 
@@ -244,4 +295,10 @@ margin-bottom: 5rem;}
         padding-left: 2.5rem; 
         margin: 3rem;
     }
+     .h2Servicios {
+         font-size: 2.8rem; 
+        }
+    .ListaServicios {
+         gap: 2rem;
+         }
 }
