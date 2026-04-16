@@ -157,7 +157,7 @@ footer {
     }
 
     #toggle__menu:checked~.Menu {
-        height: 20rem;
+        height: 14rem;
         width: 100%;
         opacity: 1;
 
