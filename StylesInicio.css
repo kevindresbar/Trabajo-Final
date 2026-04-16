@@ -176,6 +176,7 @@ margin-bottom: 5rem;}
 .h2Servicios span{ color: #008DDF; }
 
 .ListaServicios {
+    
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     /* hace que se divida en trescolumnas */
@@ -189,6 +190,9 @@ margin-bottom: 5rem;}
 .ListaServicios li {
     padding: 20px;
     transition: 0.3s;
+}
+a{
+    text-decoration: none;
 }
 
 .TitleServicios {

@@ -1,0 +1,88 @@
+* {
+    /* Reseteo básico para quitar espacios por defecto del navegador */
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-size: 62.5%;
+    /* Facilita el uso de rem (1rem = 10px) */
+    height: 100%;
+}
+.detalleservicio{
+  max-width:750px;
+  margin:5rem auto;
+  padding:3rem;
+  background:#33333331;
+  border-radius:1.5rem;
+}
+
+.detalleservicio h2{
+  font-size:2.9rem;
+  color:#003096;
+  margin-bottom:1rem;
+}
+
+.desc{
+  font-size:2rem;
+  color:#555;
+  margin-bottom:2rem;
+  line-height:1.6;
+}
+
+.lista-detalle{
+  list-style:none;
+  padding:0;
+  margin-bottom:2rem;
+}
+
+.lista-detalle li{
+  padding:1rem 0;
+  font-size:1.8rem;
+  color:#444;
+  position:relative;
+  padding-left:2rem;
+}
+
+.btn-servicio{
+  padding:1rem 2rem;
+  background: linear-gradient(135deg, #777272, #333333);
+  border:none;
+  border-radius:1rem;
+}
+
+.btn-servicio a{
+  color:#fff;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.btn-servicio:hover{
+  background:#008DDF;
+}
+
+@media(max-width:550px){
+  .detalleservicio{
+    margin:2rem;
+    padding:2rem;
+  }
+
+  .detalleservicio h2{
+    font-size:2rem;
+  }
+
+  .desc{
+    font-size:1.3rem;
+  }
+
+  .lista-detalle li{
+    font-size:1.2rem;
+  }
+
+  .btn-servicio{
+    width:100%;
+    padding:1.2rem;
+  }
+}
