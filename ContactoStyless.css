@@ -4,6 +4,7 @@ CSS FORMULARIO * {
     padding: 0px;
     box-sizing: border-box;
 }
+
 html {
     font-size: 62.5%;
     /* Facilita el uso de rem (1rem = 10px) */
@@ -16,6 +17,7 @@ main {
     gap: 50px;
     padding: 100px;
 }
+
 .Maestro {
     width: 35rem;
     border-radius: 30px;
@@ -36,7 +38,7 @@ main {
 }
 
 .contact_form {
-    background:#bbb;
+    background: #bbb;
     padding: 3rem;
     border-radius: 2.5rem;
     width: 100rem;
@@ -124,4 +126,5 @@ textarea:focus {
 
     label {
         font-size: 1.4rem;
-    }}
+    }
+}
