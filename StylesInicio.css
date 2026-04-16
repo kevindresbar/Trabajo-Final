@@ -5,12 +5,13 @@
     box-sizing: border-box;
 }
 
-html {
+html,
+body {
     font-size: 62.5%;
     /*1rem = 10px*/
     height: 100%;
 }
-/* ESTRUCTURA BASE */
+
 .Fondo {
     position: relative;
     width: 100%;
@@ -19,82 +20,104 @@ html {
     align-items: center;
     font-family: 'Segoe UI', sans-serif;
     overflow: hidden;
-}
+    z-index: 1; /*pa q se oculte el boton mientras este ese en la plnatalla*/
 
-/* IMAGEN Y CAPA (Unificadas) */
-.fondo, .superposicion-oscura {
+}
+.Fondo::before {
+    content: "";
     position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,rgba(0, 47, 150, 0.6),rgba(0, 10, 50, 0.7));
+    z-index: 1;
 }
 
-.fondo { object-fit: cover; z-index: 1; }
+.Fondoimg {
+   position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 
-.superposicion-oscura {
-    background: linear-gradient(90deg, rgba(0,48,150,0.9), rgba(0,0,0,0.4));
-    z-index: 2;
 }
 
-/* CONTENIDO DINÁMICO */
 .ContenidoFondo {
     position: relative;
-    z-index: 3;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     width: 90%;
-    margin: auto;
     gap: 30px;
+    z-index: 1;
+    
 }
 
-.Izquierda { color: #fff; max-width: 600px; }
-
-.Izquierda h1 {
-    font-size: clamp(4rem, 8vw, 7rem);
-    font-weight: 900;
-    line-height: 1;
-}
-
-/* BOTONES (Agrupados para ahorrar líneas) */
-.btnWhatsapp2, .btncel {
+.btnWhatsapp2,
+.btncel {
     display: inline-block;
     padding: 15px 30px;
     border-radius: 50px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.8rem;
-    transition: .3s;
+    font-size: 2.5rem;
+    transition: 0.3s;
 }
 
-.btnWhatsapp2 { background: #25D366; color: #fff; margin-top: 20px; }
+.Izquierda {
+    color: white;
+    max-width: 600px;
+}
 
-.btncel { background: #003096; color: #fff; display: block; margin-top: 15px; }
+.Izquierda p {
+    font-size: 2rem;
+    margin-top: 18px;
+}
 
-/* PANEL DERECHO */
+.TitleIzquierda {
+    font-size: 7rem;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.btnWhatsapp2 {
+    Background: #008DDF;
+    color: white;
+    margin-top: 20px;
+}
+
 .Derecha {
-    background: #FFD700;
+    background: #6e9fbb96;
+    color: white;
     padding: 40px;
     border-radius: 30px;
     text-align: center;
-    max-width: 380px;
-    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    max-width: 340px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.603);
 }
 
-.Derecha h2 { font-size: 2.2rem; margin-bottom: 20px; color: #333; }
+.TitleDerecha {
+    font-size: 2.2rem;
+    margin-bottom: 2.5rem;
+    line-height: 1;
+}
 
-/* EFECTOS */
-.btnWhatsapp2:hover, .btncel:hover {
+.btncel {
+    background: #008DDF;
+    color: white;
+    display: block;
+    margin-top: 15px;
+}
+
+.btnWhatsapp2:hover,
+.btncel:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* RESPONSIVE COMPACTO */
-@media (max-width: 430px) {
-    .ContenidoFondo { flex-direction: column; text-align: center; }
-    .Izquierda h1 { font-size: 4rem; }
-    .Derecha { padding: 30px 20px; }
-} agregale esto al css
 .Reseñas {
     padding: 1rem;
     padding-bottom: 5rem;
@@ -139,8 +162,14 @@ html {
     font-weight: bold;
     color: #333;
 }
-
-
+@media (max-width: 820px) {
+ .Derecha {
+        display: none;
+    }
+    .ContenidoFondo {
+        justify-content: center;
+    }
+}
 
 @media (max-width: 480px) {
     .Rese {
@@ -150,5 +179,14 @@ html {
 
     .re {
         margin-bottom: 1rem;
+    }
+
+    .ContenidoFondo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Izquierda h1 {
+        font-size: 4rem;
     }
 }

@@ -1,10 +1,14 @@
-CSS FORMULARIO *{/* Reseteo básico para quitar espacios por defecto del navegador */
+CSS FORMULARIO * {
+    /* Reseteo básico para quitar espacios por defecto del navegador */
     margin: 0px;
-padding: 0px;
-box-sizing: border-box;}
-html{
-    font-size: 62.5%; /* Facilita el uso de rem (1rem = 10px) */    
+    padding: 0px;
+    box-sizing: border-box;
 }
+html {
+    font-size: 62.5%;
+    /* Facilita el uso de rem (1rem = 10px) */
+}
+
 main {
     display: flex;
     justify-content: center;
@@ -12,30 +16,31 @@ main {
     gap: 50px;
     padding: 100px;
 }
- 
-.Maestro{
+.Maestro {
     width: 35rem;
     border-radius: 30px;
     box-shadow: 0 15px 40px #bbb;
     transition: 0.3s;
 }
+
 .Maestro:hover {
     transform: translateY(-10px) rotate(1deg);
 }
-.Titlecon{
-  width: 100%; 
-  text-align: center;
+
+.Titlecon {
+    width: 100%;
+    text-align: center;
     font-size: 3.5rem;
     color: #333;
-     margin-bottom: 3rem;
+    margin-bottom: 3rem;
 }
+
 .contact_form {
-    background: white#bbb;
+    background:#bbb;
     padding: 3rem;
     border-radius: 2.5rem;
     width: 100rem;
     box-shadow: 0 20px 50px #969494e8;
-  
 }
 
 fieldset {
@@ -50,7 +55,9 @@ label {
     color: #333;
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
     padding: 1.5rem;
     border: 1.5px solid #333;
     background: #e2e0e0;
@@ -61,27 +68,30 @@ input, textarea, select {
 input:focus {
     outline: none;
     border-color: #008DDF;
-    background:white;
+    background: white;
     box-shadow: 0 0 10px rgba(0, 141, 223, 0.452);
 }
-.List:focus{
+
+.List:focus {
     outline: none;
     border-color: #008DDF;
-    background:white;
+    background: white;
     box-shadow: 0 0 10px rgba(0, 141, 223, 0.452);
 }
-textarea:focus{
-outline: none;
+
+textarea:focus {
+    outline: none;
     border-color: #008DDF;
-    background:white;
+    background: white;
     box-shadow: 0 0 10px rgba(0, 141, 223, 0.452);
 }
+
 .btn {
     margin-top: 15px;
     padding: 18px;
     border: none;
     border-radius: 12px;
-    background: linear-gradient(135deg, #777272, #333333);  
+    background: linear-gradient(135deg, #777272, #333333);
     color: white;
     font-size: 16px;
     text-transform: uppercase;
@@ -90,14 +100,14 @@ outline: none;
 }
 
 .btn:hover {
-    background: #008DDF; 
+    background: #008DDF;
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 141, 223, 0.3);
 }
 
 @media (max-width: 480px) {
     main {
-        flex-direction: column; 
+        flex-direction: column;
         padding: 40px 15px;
         gap: 30px;
     }
@@ -108,7 +118,7 @@ outline: none;
     }
 
     .Maestro {
-        max-width: 250px; 
+        max-width: 250px;
         max-width: 100px;
     }
 
